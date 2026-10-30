@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-maroon: #722F37;
+  --brand-maroon-hover: #5F272E;
+  --brand-header: #451E24;
+}
+
+html, body {
+  transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
